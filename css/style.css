@@ -85,8 +85,8 @@ nav .row{
     align-content: center;
     justify-content: space-between;
 }
-.row img {
-    height: 30px;
+nav ul li img {
+    max-width: 75%;
 }
 nav ul {
     display: flex;
@@ -105,6 +105,12 @@ nav a {
 }
 nav a:hover{
     text-decoration: underline 1px solid white;
+}
+@media all and (min-width: 2500px) {
+div.container.all{
+    width: 50%;
+    margin: 0 auto;
+}
 }
 /**************************************
     1st SEC SETTINGS
@@ -176,3 +182,55 @@ nav a:hover{
 .col-txt h3 {
     margin: 1rem 0;
 }
+/**************************************
+    2nd SEC SETTINGS
+***************************************/
+.row-2{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.col-sec2 img{
+    max-width: 100%;
+    margin-bottom: 5rem;
+}
+.col-sec2.right img {
+    max-width: 50%;
+    margin-bottom: 5rem;
+}
+.col-sec2 {
+    width: 50%;
+} 
+.col-sec2.right {
+    background-color: white;
+    border-radius: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    max-width: 30%;
+    margin-bottom: 3rem;
+}
+.col-sec2.left {
+    height: 100%;
+    padding:2%;
+    width: 60%;
+}
+.col-sec2.left img{
+    margin-top: 5rem;
+}
+.col-sec2.right .btn{
+    width: fit-content;
+    margin: auto;
+    background-color: #9792e4;
+    padding: 0.8rem 1rem ;
+    border-radius: 50%;
+}
+.col-sec2.right h3,
+.col-sec2.right p,
+.col-sec2.left h3,
+.col-sec2.left p {
+    margin: 3rem 0;
+}
+
