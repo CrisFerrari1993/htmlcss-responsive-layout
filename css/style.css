@@ -13,9 +13,6 @@
 /**************************************
     GENERAL TAG SETTINGS
 ***************************************/
-body {
-    background-color: #9792e4 ;
-}
 nav {
     position: fixed;
     z-index: 500;
@@ -28,6 +25,10 @@ nav {
 section{
     width: 100%;
     /* debug */
+}
+section.sec.violet{
+    background-color: #9792e4;
+    padding-bottom: 1rem;
 }
 section#first {
     margin-top: 50px;
@@ -110,7 +111,7 @@ nav a:hover{
 
 @media all and (max-width:768px) {
     div.all{
-        width: 95%;
+        width: 80%;
         margin: 0 auto;
     }
     nav ul:nth-child(2) {
@@ -162,8 +163,8 @@ nav a:hover{
 }
 /* col settings */
 .col {
-    width: calc((100% / 3) - 2rem);
-    margin: 1rem;
+    width: calc((100% / 3) - 1rem);
+    margin: 0.5rem;
     background-color: #b5ddff;
     border-radius: 1.5rem;
     padding: 0 2rem;
@@ -193,6 +194,37 @@ nav a:hover{
 .col-txt h3 {
     margin: 1rem 0;
 }
+@media all and (max-width: 768px){
+    section#first .row{
+        padding-top: 1rem;
+        display: block;
+    }
+    section#first .col {
+        display: block;
+        width: 100%;
+        text-align:justify;
+        margin: 0;
+    }
+    #demo{
+        margin: 0;
+        width: auto;
+    }
+    #demo .demo-sx {
+        width: fit-content;
+        padding: 0.5rem 0;
+    }
+    #demo .demo-dx {
+        width: fit-content;
+    }
+    #demo .demo-dx img{
+        width: 80;
+        position: relative;
+    }
+    .col-txt p,
+    .col-txt h3 {
+        padding-bottom: 1rem;
+    }
+}
 /**************************************
     2nd SEC SETTINGS
 ***************************************/
@@ -206,43 +238,62 @@ nav a:hover{
 }
 .col-sec2 img{
     max-width: 100%;
-    margin-bottom: 5rem;
-}
-.col-sec2.right img {
-    max-width: 50%;
-    margin-bottom: 5rem;
 }
 .col-sec2 {
     width: 50%;
 } 
 .col-sec2.right {
+    width: 50%;
+    margin-top: 5rem;
     background-color: white;
     border-radius: 2.5rem;
     text-align: center;
     padding: 1rem;
-    max-width: 30%;
-    margin-bottom: 3rem;
+    align-self: flex-end;
 }
 .col-sec2.left {
     height: 100%;
-    padding:2%;
-    width: 60%;
+    padding:1rem;
+    align-self: flex-start;
+    width: 50%;
 }
 .col-sec2.left img{
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 .col-sec2.right .btn{
     width: fit-content;
     margin: auto;
     background-color: #9792e4;
-    padding: 0.8rem 1rem ;
     border-radius: 50%;
 }
 .col-sec2.right h3,
 .col-sec2.right p,
 .col-sec2.left h3,
 .col-sec2.left p {
-    margin: 3rem 0;
+    margin: 2rem 0;
+}
+@media all and (max-width:600px) {
+    .row-2 {
+        width: 100%;
+        display: block;
+    }
+    .col-sec2.left img{
+        margin-bottom: 0;
+    }
+    .col-sec2.right {
+        min-width: 100%;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+    .col-sec2.right img{
+        min-width: 100%;
+        margin: 0;
+    }
+    .col-sec2.left {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 /**************************************
     3rd SEC SETTINGS
@@ -271,7 +322,7 @@ nav a:hover{
 .sec3-img {
     margin: 2rem 2rem;
     padding: 5rem;
-    min-width: 5%;
+    max-width: 100%;
     background-image: url("../img/testimonial1.jpg");
     background-size: cover;
     background-position: center;
@@ -297,6 +348,309 @@ nav a:hover{
     margin-top: 1rem;
     font-weight: 600;
 }
+@media all and (max-width:767px) {
+    .col-sec3 {
+        padding: 2rem;
+        display: block;
+    }
+    .sec3-img {
+        padding:8rem;
+        height: 40%;
+    }
+    .column.sec3 span {
+        text-align: center;
+    }
+    .sec3-img {
+        padding:6rem;
+    }
+}
+@media all and (min-width: 768px){
+    .col-sec3 {
+        display: flex;
+    }
+}
 /**************************************
-    4rd SEC SETTINGS
+    4th SEC SETTINGS
 ***************************************/
+/* mobile first ver */
+@media all and (max-width:767px) {
+    .row.sec4 {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+    .row.sec4 h3 {
+        text-align: center;
+        font-size: 2rem;
+        color:white;
+        margin: 1rem;
+    }
+    .col.sec4 {
+        width: 100%;
+        background-color: white;
+        padding: 1rem 0;
+    }
+    .col.sec4 .btn{
+        padding: 0.1rem 1rem;
+        background-color: #9792e4;
+        color: white;
+        width: 30%;
+        margin: 0 auto;
+    }
+    .col.sec4 h2,
+    .col.sec4 h3 {
+        color: #9792e4;
+        margin: 1rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+    .col.sec4 p {
+        font-weight: 100;
+        margin: 1rem 1rem;
+    }
+}
+/* tablet version */
+@media all and (min-width:768px){
+        .container.all h3{
+        padding-top: 2rem;
+        text-align: center;
+        margin: 2rem;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    .row.sec4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col.sec4 {
+        width: calc((100% / 2) - 1rem);
+        background-color: white;
+        padding: 0.5rem;
+    }
+    .col.sec4 h2,
+    .col.sec4 h3 {
+        color: #9792e4;
+        margin: 1rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+    .col.sec4 .btn{
+        padding: 0.1rem 1rem;
+        background-color: #9792e4;
+        color: white;
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .col.sec4 p {
+        font-weight: 100;
+        margin: 1rem 1rem;
+    }
+}
+/* desktop version */
+@media all and (max-width:767px) {
+        .container.all h3{
+        padding-top: 2rem;
+        text-align: center;
+        margin: 2rem;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    .row.sec4 {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+
+    .row.sec4 h3 {
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        margin: 1rem;
+    }
+
+    .col.sec4 {
+        width: 100%;
+        background-color: white;
+        padding: 1rem 0;
+    }
+
+    .col.sec4 .btn {
+        padding: 0.1rem 1rem;
+        background-color: #9792e4;
+        color: white;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .col.sec4 h2,
+    .col.sec4 h3 {
+        color: #9792e4;
+        margin: 1rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .col.sec4 p {
+        font-weight: 100;
+        margin: 1rem 1rem;
+    }
+}
+
+/* tablet version */
+@media all and (min-width:1200px){
+    .container.all h3{
+        padding-top: 2rem;
+        text-align: center;
+        margin: 2rem;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    .row.sec4 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col.sec4 {
+        width: calc((100% / 3) - 1rem);
+        margin: 0.5rem;
+        background-color: white;
+        padding: 0.5rem;
+    }
+
+    .col.sec4 h2,
+    .col.sec4 h3 {
+        color: #9792e4;
+        margin: 1rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .col.sec4 .btn {
+        padding: 0.1rem 1rem;
+        background-color: #9792e4;
+        color: white;
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .col.sec4 p {
+        font-weight: 100;
+        margin: 1rem 1rem;
+    }
+}
+/**************************************
+    5th SEC SETTINGS
+***************************************/
+/* mobile version */
+@media all and (min-width:480px) {
+    .row {
+        width: 90%;
+        margin:0 auto;
+        display: block;
+    }
+    .col {
+        width: 100%;
+        height: fit-content;
+        background: white;
+        color: black;
+    }
+    .col.sx h2{
+        margin: 2rem 0 ;
+    }
+    .col.sx p {
+        font-weight: 100;
+        margin: 1rem 0;
+    }
+    .sec5-img img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+    .sec5-img {
+        position: relative;
+        width: 50%;
+        margin: 0;
+    }
+    .sec5-img i.fa-solid{
+        position: absolute;
+        top:-1rem;
+        right: -1rem;
+        font-size: 4rem;
+        color:#9792e4;
+    }
+    .sec5-txt {
+        max-width: 90%;
+    }
+    .sec5-txt .btn{
+        background-color: #9792e4;
+        color: white;
+        padding: 0.2rem 1rem;
+    }
+    .sec5-txt h4 {
+        color:#9792e4;
+        margin: 1rem 0;
+    }
+}
+/* tablet version */
+@media all and (min-width:480px) {
+    .row {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .col {
+        width: 100%;
+        height: fit-content;
+        background: white;
+        color: black;
+    }
+
+    .col.sx h2 {
+        margin: 2rem 0;
+    }
+
+    .col.sx p {
+        font-weight: 100;
+        margin: 1rem 0;
+    }
+
+    .sec5-img img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+    .sec5-img {
+        position: relative;
+        width: 50%;
+        margin: 0;
+    }
+
+    .sec5-img i.fa-solid {
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        font-size: 4rem;
+        color: #9792e4;
+    }
+
+    .sec5-txt {
+        max-width: 90%;
+    }
+
+    .sec5-txt .btn {
+        background-color: #9792e4;
+        color: white;
+        padding: 0.2rem 1rem;
+    }
+
+    .sec5-txt h4 {
+        color: #9792e4;
+        margin: 1rem 0;
+    }
+}
