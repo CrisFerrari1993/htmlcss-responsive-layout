@@ -24,7 +24,6 @@ nav {
     width: 100%;
     height: 50px;
     background-color: #0084fd ;
-    border-bottom: 1px solid black;
 }
 section{
     width: 100%;
@@ -233,4 +232,59 @@ div.container.all{
 .col-sec2.left p {
     margin: 3rem 0;
 }
-
+/**************************************
+    3rd SEC SETTINGS
+***************************************/
+.column.sec3 {
+    text-align: center;
+    padding: 2rem;
+}
+.column.sec3 span{
+    display: block;
+}
+.column.sec3 h3 {
+    color: #9792e4;
+}
+.column.sec3 span,
+.column.sec3 h3,
+.column.sec3 p {
+    margin-bottom: 1rem;
+}
+.col-sec3{
+    display: flex;
+    background-color: #9792e4;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+.sec3-img {
+    margin: 2rem 2rem;
+    padding: 5rem;
+    min-width: 5%;
+    background-image: url("../img/testimonial1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.sec3-img.two{
+    background-image: url(../img/testimonial2.jpg);
+}
+.sec3-img.three {
+    background-image: url(../img/testimonial3.jpg);
+}
+.sec3-txt {
+    padding: 0 2rem;
+    color: white;
+}
+.sec3-txt p {
+    text-align: left;
+    margin-top: 4rem;
+}
+.sec3-txt span{
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+/**************************************
+    4rd SEC SETTINGS
+***************************************/
