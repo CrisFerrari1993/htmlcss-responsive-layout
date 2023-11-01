@@ -579,5 +579,40 @@ nav {
         margin: 0 auto;
     }
 }
-
+/*******************************
+ Footer RULES
+********************************/
+footer{
+    background-color: #333333;
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer-layout{
+    width: 50%;
+    margin: 0 auto;
+}
+.footer-top{
+    color: white;
+    margin: 0 0 2rem 0;
+}
+.footer-bottom{
+    color: white;
+}
+.footer-bottom a{
+    color: #9792e4;
+}
+/* tablet version */
+@media all and (max-width:1280px){
+    .footer-layout{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+/* mobile version */
+@media all and (max-width:480px){
+    .footer-layout{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 
