@@ -390,3 +390,69 @@ nav {
         border-radius: 50%;
     }
 }
+/*******************************
+4th section RULES
+********************************/
+.sec4-layout {
+    padding: 1rem 0;
+}
+.sec4-layout h3{
+    color: white;
+    text-align: center;
+    margin: 2rem;
+}
+.row4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col4 {
+    width: calc((100% / 3) - 2rem );
+    margin: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.col4 h4,
+.col4 h2 {
+    color: #9792e4;
+    margin-bottom: 1rem;
+}
+.col4 h2{
+    font-size: 3rem;
+}
+.col4 h4{
+    font-size: 1.3rem;
+}
+.col4 p{
+    color: grey;
+    margin-bottom: 1rem;
+}
+.col4 .btn{
+    background-color: #9792e4;
+    width: fit-content;
+    padding: 0.2rem 1rem;
+    color: white;
+}
+/* tablet version */
+@media all and (max-width:1280px){
+   .col4 {
+    width: calc((100% / 2) - 1rem );
+    margin: 0.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    }
+    .sec4-layout h3{
+    color: white;
+    text-align: center;
+    margin: 1rem;
+    } 
+}
+/* mobile version */
+@media all and (max-width:480px){
+    .col4{
+        width: 100%;
+    }
+}
+
+
