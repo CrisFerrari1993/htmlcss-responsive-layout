@@ -454,5 +454,74 @@ nav {
         width: 100%;
     }
 }
+/*******************************
+5th section RULES
+********************************/
+.sec5-layout{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec5-left{
+    max-width: 75%;
+    padding: 1rem 2rem;
+}
+.sec5-right{
+    max-width: 25%;
+    position: relative;
+    padding: 2rem 0;
+}
+.sec5-right img{
+    max-width: 100%;
+   border-radius: 50%;
+}
+.sec5-right i.fa-solid{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    font-size: 4rem;
+    color: #9792e4;
+}
+.sec5-right h4{
+    color: #9792e4;
+}
+.sec5-right .btn{
+    color: white;
+    background-color: #9792e4;
+    width: fit-content;
+    margin: 1rem 0;
+    padding: 0.2rem 0.7rem;
+}
+.sec5-left h2{
+    color: #9792e4;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+.sec5-left p{
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+/* mobile version */
+@media all and (max-width:480px){
+    .sec5-layout{
+        display:block;
+        padding: 2rem 0;
+    }
+    .sec5-left{
+        max-width: 100%;
+        padding: 0;
+    }
+    .sec5-right{
+        max-width: 100%;
+        padding: 0;
+    }
+    .sec5-right img{
+        max-width: 70%;
+        margin-bottom: 1rem;
+    }
+    .sec5-right i.fa-solid{
+        left:11rem;
+        top:0;
+    }
+}
 
 
