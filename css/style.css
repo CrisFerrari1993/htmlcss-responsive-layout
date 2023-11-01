@@ -12,6 +12,21 @@ GENERAL PAGE SETTINGS
 /*******************************
 GENERAL TAG SETTINGS
 ********************************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+section {
+    width: 100%;
+}
+
+section:first-child {
+    margin-top: 5rem;
+}
+
+section.purple {
+    background-color: #9792e4;
+}
 .btn {
     background-color: white;
     padding: 2px 5px;
@@ -36,11 +51,6 @@ nav {
     height: 50px;
     z-index: 500;
 }
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
 .nav-layout ul {
     display: flex;
     list-style: none;
@@ -70,13 +80,29 @@ nav {
     justify-content: space-between;
 }
 /* Mobile version */
-@media all and (min-width:480px){
+@media all and (max-width:480px){
     .nav-layout ul:nth-child(2){
         display: none;
     }
 }
 /* tablet version */
-@media all and (min-width:768px) {
+@media all and (max-width:1000px) {
+    .nav-layout ul:nth-child(2){
+        display: flex;
+    }
+    .nav-layout ul:last-child{
+        display: block;
+    }
+    .nav-layout ul:nth-child(2){
+        display: none;
+    }
+}
+/* desktop version */
+@media all and (min-width:1000px){
+    .container{
+        width: 70%;
+        margin: 0 auto;
+    }
     .nav-layout ul:nth-child(2){
         display: flex;
     }
@@ -84,10 +110,216 @@ nav {
         display: none;
     }
 }
-/* desktop version */
-@media all and (min-width:1280px){
-    .container{
-        width: 70%;
+/*******************************
+1st section RULES
+********************************/
+.row1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#demo{
+    width: calc(((100% / 3)* 2) - 1rem);
+    position: relative;
+}
+.col1{
+    width: calc((100% / 3) - 1rem);
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color:#b5ddff ;
+}
+#demo .col1-demo-layout{
+    display: flex;
+}
+.col1-sec1{
+    padding: 1rem;
+}
+.col1-sec1 h3,
+.col1-sec1 p,
+.col1-sec1 .btn{
+    margin-bottom: 2rem;
+}
+.col1-sec1 h3 {
+    color: #0084fd;
+}
+.col1-sec1 p{
+    color: gray;
+}
+.col1-sec1 .btn {
+    background-color: #0084fd;
+    width: fit-content;
+    color: white;
+}
+.col1-sec1,
+.col1-sec2 {
+    max-width:50%;
+}
+.col1-sec2 img {
+    width: 14rem;
+    position: absolute;
+    bottom: 0;
+}
+.col1-layout {
+    text-align: center;
+    padding: 2rem;
+}
+.col1-layout i.fa-solid {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    color: #0084fd;
+}
+.col1-layout h3,
+.col1-layout p{
+    margin-bottom: 1rem;
+}
+.col1-layout h3 {
+    color: #0084fd;
+}
+.col1-layout p {
+    color: gray;
+}
+
+/* tablet version */
+@media all and (max-width:768px) {
+    .row1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #demo {
+        width: calc(((100% / 3) * 2) - 1rem);
+    }
+    .col1 {
+        width: calc((100% / 3) - 1rem);
+    }
+        #demo .col1-demo-layout {
+        display: block;
+    }
+
+    .col1-sec1 {
+        min-width: 100%;
+    }
+
+    .col1-sec2 {
+        width: fit-content;
         margin: 0 auto;
     }
+
+    .col1-sec2 img {
+        position: relative;
+        bottom: -0.3rem;
+        width: 100%;
+    }
+
+    .col1-sec1 .btn {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    .col1-sec1 h3 {
+        text-align: center;
+    }
 }
+/* mobile version */
+@media all and (max-width:480px) {
+    .row1 {
+        display: block;
+    }
+
+    #demo {
+        width: 100%;
+    }
+
+    .col1 {
+        width: 100%;
+    }
+
+    #demo .col1-demo-layout {
+        display: block;
+    }
+
+    .col1-sec1 {
+        min-width: 100%;
+    }
+
+    .col1-sec2 {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .col1-sec2 img {
+        position: relative;
+        bottom: -0.3rem;
+    }
+
+    .col1-sec1 .btn {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    .col1-sec1 h3 {
+        text-align: center;
+    }
+}
+/*******************************
+2st section RULES
+********************************/
+.row2.layout{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.row2.layout .col2 img{
+    max-width: 100%;
+}
+.col2{
+    max-width: 50%;
+    padding: 2rem 1rem;
+}
+.col2:first-child h3,
+.col2:first-child p {
+    color: white;
+    margin-top:5rem ;
+}
+.white{
+    margin-top: 10rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+}
+.col2.white h3,
+.col2.white p{
+    margin: 1rem 1rem;
+    text-align: center;
+}
+.col2 h3{
+    font-size: 2rem;
+}
+.col2.white .btn{
+    background-color: #9792e4;
+    width: fit-content;
+    padding: 0.8rem 0.8rem;
+    border-radius: 50%;
+    margin:1rem auto;
+}
+/* tablet version */
+@media all and (max-width:480px){
+    .row2.layout{
+    display: block;
+    padding: 1rem;
+    }
+    .col2{
+        max-width: 100%;
+    }
+    .col2:first-child h3,
+    .col2:first-child p{
+        margin: 2rem 0;
+    }
+    .col2.white{
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+}
+/*******************************
+3st section RULES
+********************************/
